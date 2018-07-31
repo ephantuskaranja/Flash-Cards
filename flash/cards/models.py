@@ -15,3 +15,9 @@ class Course(models.Model):
         ('Science', 'science'),
     )
     name = models.CharField(max_length=30,choices=COURSE)
+
+class Flshcard(models.Model):
+    user = models.ForeignKey(User)
+    course = models.ForeignKey(Course)
+    notes = models.TextField(max_length=255)
+    pub_date = models.DateTimeField(auto_now_add=True)
