@@ -112,5 +112,6 @@ virtual/
 .venv/
 .idea/
 .idea
+migrations/
 
 # End of https://www.gitignore.io/api/python
